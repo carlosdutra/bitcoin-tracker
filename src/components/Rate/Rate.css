@@ -1,0 +1,20 @@
+.rate__wrap {
+    padding: 20px;
+    border: 1px solid rgb(0,0,0,.2);
+    border-radius: 6px;
+}
+
+.rate__code {
+    font-size: 22px;
+    color: tomato;
+}
+
+.rate__desc {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.rate__rate {
+    font-weight: bold;
+}

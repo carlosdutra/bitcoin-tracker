@@ -1,0 +1,11 @@
+.bitcoin__title { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid__rates {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+}

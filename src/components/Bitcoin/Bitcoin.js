@@ -1,5 +1,6 @@
-import {React, useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Rate from 'components/Rate'
+import Graph from '../Graph'
 import './Bitcoin.css'
 
 const Bitcoin = () => {
@@ -14,13 +15,13 @@ const Bitcoin = () => {
             setData(data);
             console.log(data);
         });
-
+        
     }, [data])
 
     return (
         <div>
             <div className="bitcoin__title">
-                <h1>{data.chartName} now</h1>
+                <h2>{data.chartName} now</h2>
                 <p>Last updated: {data.time?.updated}</p>
             </div>
 
@@ -44,6 +45,10 @@ const Bitcoin = () => {
                     symbol={"\u00A3"}
                 />
             </div>
+
+            <h2>Last 31 days</h2>
+            <Graph />
+
             <h6>{data.disclaimer}</h6>
         </div>
     )
